@@ -1,6 +1,16 @@
-remote:
-  service:
-    url-list:
-      - http://localhost:8084/
-      - http://localhost:8085/
-      - http://localhost:8086/
+server:
+  port: 8088
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
