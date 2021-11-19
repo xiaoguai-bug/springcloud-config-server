@@ -10,7 +10,7 @@ spring:
         - id: provider
           uri: lb:eureka-consumer
           predicates:
-            - Path=/find/**
+            - Path=/**
 
 server:
   port: 80
