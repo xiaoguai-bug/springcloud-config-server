@@ -8,7 +8,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: provider
-          uri: lb:eureka-client
+          uri: lb:eureka-consumer
           predicates:
             - Path=/find/**
 
