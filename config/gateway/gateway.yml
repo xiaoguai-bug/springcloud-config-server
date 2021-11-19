@@ -10,7 +10,7 @@ spring:
         - id: provider
           uri: lb:eureka-client
           predicates:
-            - Path=/client/**
+            - Path=/find/**
 
 server:
   port: 80
@@ -20,7 +20,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-eureka-client:
+eureka-provider:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 
