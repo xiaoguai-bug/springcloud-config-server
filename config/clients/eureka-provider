@@ -1,9 +1,0 @@
-spring:
-  application:
-    #设置当前客户端的连接名
-    name: eureka-provider
-  datasource:
-    url: jdbc:mysql://192.168.50.9:3306/mall?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
