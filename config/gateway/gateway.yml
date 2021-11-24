@@ -24,6 +24,7 @@ eureka:
 eureka-provider:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    listOfServers: localhost:8084,localhost:8085,localhost:8086
 
 management:
   endpoints:
