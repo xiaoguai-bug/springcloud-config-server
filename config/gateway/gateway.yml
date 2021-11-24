@@ -5,6 +5,7 @@ spring:
     gateway:
       discovery:
         locator:
+          enable: true
           lower-case-service-id: true
       routes:
         - id: gateway
