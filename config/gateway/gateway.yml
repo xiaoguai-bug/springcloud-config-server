@@ -11,7 +11,8 @@ spring:
           uri: lb:eureka-consumer
           predicates:
             - Path=/**
-
+          filters:
+            - CustomRoute=red,blue
 server:
   port: 80
 
