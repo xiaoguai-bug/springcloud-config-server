@@ -1,13 +1,13 @@
 spring:
   application:
-    name: gateway
+    name: eureka-gateway
   cloud:
     gateway:
       discovery:
         locator:
-          lower-case-service-id: true
+          lower-case-service-id: 
       routes:
-        - id: provider
+        - id: gateway
           uri: lb://eureka-provider
           predicates:
             - Path=/**
