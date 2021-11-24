@@ -5,7 +5,7 @@ spring:
     gateway:
       discovery:
         locator:
-          lower-case-service-id: 
+          lower-case-service-id: true
       routes:
         - id: gateway
           uri: lb://eureka-provider
